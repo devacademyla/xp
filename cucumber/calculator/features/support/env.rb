@@ -1,15 +1,15 @@
 class Calculator
   def push(n)
-    @mem ||= []
-    @mem << n
+    @array ||= []
+    @array << n
   end
-  
+
   def add
-    return unless @mem.size >= 2
-    @mem = [@mem[0] + @mem[1]]
+    return unless @array.size >= 2
+    @array = [@array[0] + @array[1]]
   end
 
   def result
-    @mem.last
+    @array.last
   end
 end
